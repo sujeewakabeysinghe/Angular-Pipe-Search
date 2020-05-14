@@ -19,10 +19,10 @@ import { AppComponent } from './app.component';
     progressAnimation:"increasing",
     preventDuplicates: true,
     closeButton:false,
-    //easing:'ease-in',
-    //easeTime:800,
+    easing:'ease-in',
+    easeTime:800,
     tapToDismiss:true,
-    //maxOpened:5
+    maxOpened:5
     })
   ],
   providers: [],
