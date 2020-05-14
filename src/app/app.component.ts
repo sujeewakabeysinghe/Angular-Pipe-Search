@@ -13,7 +13,7 @@ export class AppComponent {
   ){}
   showToastr(){
     console.log("toastr");
-    this.toastr.success('Hello world!', 'Toastr fun!');
+    this.toastr.success('Hello world!');
     this.toastr.warning('Hello world!', 'Toastr fun!');
     this.toastr.error('Hello world!', 'Toastr fun!');
     this.toastr.info('Hello world!', 'Toastr fun!');

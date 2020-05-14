@@ -18,7 +18,7 @@ import { AppComponent } from './app.component';
     positionClass: 'toast-top-right',
     progressBar:true,
     progressAnimation:"increasing",
-    preventDuplicates: true,
+    preventDuplicates: false,
     closeButton:false,
     easing:'ease-in',
     easeTime:800,
