@@ -1,1 +1,11 @@
 <button class="button" mat-raised-button color="primary" (click)="showToastr()">Toastr Message</button>
+
+<div>
+  <mat-form-field class="example-full-width" appearance="outline">
+    <mat-label class="card-header">Search</mat-label>
+    <input class="card-body" matInput type="text" name="search" [(ngModel)]="search">
+  </mat-form-field>
+</div>
+<div *ngFor="let color of colors | colorfilter:search">
+{{color}}
+</div>

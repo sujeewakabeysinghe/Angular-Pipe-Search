@@ -1,14 +1,17 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule } from '@angular/forms';
 import { ToastrModule } from 'ngx-toastr';
-import {MatButtonModule} from '@angular/material/button';
+import { MatButtonModule,MatInputModule } from '@angular/material';
 
 import { AppComponent } from './app.component';
+import { ColorfilterPipe } from './colorfilter.pipe';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ColorfilterPipe
   ],
   imports: [
     BrowserModule,
@@ -25,7 +28,9 @@ import { AppComponent } from './app.component';
     tapToDismiss:true,
     maxOpened:5
     }),
-    MatButtonModule
+    FormsModule,
+    MatButtonModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]

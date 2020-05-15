@@ -7,15 +7,28 @@ import { ToastrService } from 'ngx-toastr';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'pipe-search';
+
+  colors=[
+    'red',
+    'blue',
+    'white',
+    'green',
+    'black',
+    'yellow',
+    'pink'
+  ];
+  search:string
+
   constructor(
     private toastr:ToastrService
   ){}
+
   showToastr(){
     console.log("toastr");
-    this.toastr.success('Hello world!');
+    this.toastr.success('Hello world!', 'Toastr fun!');
     this.toastr.warning('Hello world!', 'Toastr fun!');
     this.toastr.error('Hello world!', 'Toastr fun!');
     this.toastr.info('Hello world!', 'Toastr fun!');
   }
+
 }
