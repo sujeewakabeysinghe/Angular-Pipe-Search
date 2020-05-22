@@ -26,7 +26,7 @@ import { ColorfilterPipe } from './colorfilter.pipe';
     easing:'ease-in',
     easeTime:800,
     tapToDismiss:true,
-    maxOpened:5
+    maxOpened:6
     }),
     FormsModule,
     MatButtonModule,
